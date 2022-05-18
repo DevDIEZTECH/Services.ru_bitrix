@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title><?$APPLICATION->ShowTitle();?></title>
 	<?$APPLICATION->ShowHead();?>
@@ -24,9 +23,17 @@
 				<span class="hamburger__line"></span>
 				<span class="hamburger__line"></span>
 			</button>
-			<a class="logo" href="index.html">
-				<img src="<?=SITE_TEMPLATE_PATH?>/images/header__logo.svg?957ed2dd37d1392dd4edd402ad9a1d36" alt="LOGO">
-			</a>
+			<?$APPLICATION->IncludeComponent(
+					"bitrix:main.include",
+					"",
+					Array(
+						"AREA_FILE_SHOW" => "file",
+						"AREA_FILE_SUFFIX" => "inc",
+						"EDIT_TEMPLATE" => "",
+						"PATH" => "/include/inc_logo_header.php"
+					)
+				);
+			?>	
 			<nav class="nav">
 				<ul class="nav__menu">
 					<li class="nav__item">

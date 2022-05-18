@@ -2,9 +2,17 @@
 	<footer class="footer">
 	<div class="container">
 		<div class="footer__wrapper">
-			<a class="logo" href="#">
-				<img src="<?=SITE_TEMPLATE_PATH?>/images/footer__logo.svg?17deb9b072d7979e720c31b98ce8ad1e" alt="LOGO">
-			</a>
+			<?$APPLICATION->IncludeComponent(
+					"bitrix:main.include",
+					"",
+					Array(
+						"AREA_FILE_SHOW" => "file",
+						"AREA_FILE_SUFFIX" => "inc",
+						"EDIT_TEMPLATE" => "",
+						"PATH" => "/include/inc_logo_footer.php"
+					)
+				);
+			?>	
 			<nav class="nav">
 				<ul class="nav__menu">
 					<li class="nav__item">

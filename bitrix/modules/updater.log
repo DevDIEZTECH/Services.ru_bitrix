@@ -2672,3 +2672,15 @@
 2022-05-16 20:45:27 -  - exec CUpdateClient::ParseServerData
 2022-05-16 20:45:27 - STEP - Finish - NOUPDATES
 2022-05-16 20:45:27 - STEP - Finish - NOUPDATES
+2022-05-16 21:07:43 -  - exec CUpdateClient::GetUpdatesList
+2022-05-16 21:07:43 -  - exec CUpdateClient::CollectRequestData
+2022-05-16 21:07:43 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=21.1200.800&VERSION=22.0.150&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=bitra&CHHB=bitra&CSAB=127.0.0.1&SUID=5cd961f1aea7caee05edc67c42744e7a&CANGZIP=Y&CLIENT_PHPVER=7.4.27&stable=Y&mbfo=0&NGINX=Y&SMD=N&rerere=Y&bitm_main=22.0.150&bitm_b24connector=21.100.0&bitm_bitrixcloud=21.0.0&bitm_clouds=22.0.0&bitm_fileman=22.0.0&bitm_highloadblock=22.200.0&bitm_iblock=21.800.200&bitm_landing=21.1200.50&bitm_messageservice=22.200.100&bitm_perfmon=21.0.0&bitm_rest=22.0.0&bitm_search=22.0.0&bitm_seo=22.0.100&bitm_socialservices=22.0.50&bitm_translate=21.100.0&bitm_ui=22.200.100&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2022-05-16 21:07:43 -  - exec CUpdateClient::GetHTTPPage
+2022-05-16 21:07:43 -  - TIME GetUpdatesList(request) 0.296 sec
+2022-05-16 21:07:43 -  - exec CUpdateClient::ParseServerData
+2022-05-18 14:28:06 -  - exec CUpdateClient::GetUpdatesList
+2022-05-18 14:28:06 -  - exec CUpdateClient::CollectRequestData
+2022-05-18 14:28:06 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=21.1200.800&VERSION=22.0.150&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=bitra&CHHB=bitra&CSAB=127.0.0.1&SUID=5cd961f1aea7caee05edc67c42744e7a&CANGZIP=Y&CLIENT_PHPVER=7.4.27&stable=Y&mbfo=0&NGINX=Y&SMD=N&rerere=Y&bitm_main=22.0.150&bitm_b24connector=21.100.0&bitm_bitrixcloud=21.0.0&bitm_clouds=22.0.0&bitm_fileman=22.0.0&bitm_highloadblock=22.200.0&bitm_iblock=21.800.200&bitm_landing=21.1200.50&bitm_messageservice=22.200.100&bitm_perfmon=21.0.0&bitm_rest=22.0.0&bitm_search=22.0.0&bitm_seo=22.0.100&bitm_socialservices=22.0.50&bitm_translate=21.100.0&bitm_ui=22.200.100&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2022-05-18 14:28:06 -  - exec CUpdateClient::GetHTTPPage
+2022-05-18 14:28:06 -  - TIME GetUpdatesList(request) 0.424 sec
+2022-05-18 14:28:06 -  - exec CUpdateClient::ParseServerData
