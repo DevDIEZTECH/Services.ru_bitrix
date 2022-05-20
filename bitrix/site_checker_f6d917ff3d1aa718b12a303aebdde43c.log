@@ -1,4 +1,156 @@
-2022-May-19 14:31:48 Наличие необходимых модулей php (check_php_modules): Ok
+2022-May-20 15:50:36 Наличие необходимых модулей php (check_php_modules): Ok
 Все необходимые модули установлены
-2022-May-19 14:31:48 Обязательные параметры PHP (check_php_settings): Fail
+2022-May-20 15:50:39 Обязательные параметры PHP (check_php_settings): Fail
 Ошибка! Значение max_input_vars должно быть не ниже 10000. Текущее значение: 1000
+2022-May-20 15:50:41 Модули веб-сервера (check_security): Ok
+Конфликтов не выявлено
+2022-May-20 15:50:43 Значения переменных сервера (check_server_vars): Fail
+Ошибка! Текущий домен не валидный (bitra). Может содержать только цифры, латинские буквы и дефис. Должен содержать точку.
+2022-May-20 15:50:45 Сохранение сессии (check_session): Ok
+50% done
+2022-May-20 15:50:47 Сохранение сессии (check_session): Ok
+Успешно
+2022-May-20 15:50:49 Параметры настройки UTF (mbstring и константа BX_UTF) (check_mbstring): Ok
+Правильные. Сайт работает в UTF кодировке
+2022-May-20 15:50:51 Служебные скрипты в корне сайта (check_install_scripts): Ok
+Отсутствуют
+2022-May-20 15:50:53 Работа с сокетами (check_socket): Ok
+Connection to bitra:80	Success
+
+Успешно
+2022-May-20 15:50:56 Выполнение агентов на cron (check_bx_crontab): Warning
+Замечание. Агенты выполняются на хитах, рекомендуется перевести выполнение агентов на cron
+2022-May-20 15:50:58 Параметры подключения к базе данных (check_dbconn_settings): Ok
+Успешно
+2022-May-20 15:51:02 Лишний вывод в файлах конфигурации (check_dbconn): Ok
+Connection to bitra:80	Success
+
+Успешно
+2022-May-20 15:51:04 Сохранение сессии без UserAgent (check_session_ua): Ok
+50% done
+Connection to bitra:80	Success
+
+2022-May-20 15:51:06 Сохранение сессии без UserAgent (check_session_ua): Ok
+Connection to bitra:80	Success
+
+Успешно
+2022-May-20 15:51:08 Настройки сайтов (check_sites): Ok
+Правильные
+2022-May-20 15:51:10 Передача объектов по ссылке (check_clone): Ok
+Успешно
+2022-May-20 15:51:12 Размер стека и pcre.recursion_limit (check_pcre_recursion): Ok
+Connection to bitra:80	Success
+
+Успешно
+2022-May-20 15:51:15 Загрузка файла (check_upload): Ok
+Connection to bitra:80	Success
+
+Успешно
+2022-May-20 15:51:17 Загрузка файла больше 4Мб (check_upload_big): Ok
+Connection to bitra:80	Success
+
+Успешно
+2022-May-20 15:51:19 Загрузка файла через php://input (check_upload_raw): Ok
+Connection to bitra:80	Success
+
+Успешно
+2022-May-20 15:51:21 Передача POST запроса с большим числом параметров (check_post): Ok
+Connection to bitra:80	Success
+
+Успешно
+2022-May-20 15:51:23 Отправка почты (check_mail): Ok
+Успешно
+2022-May-20 15:51:25 Отправка почтового сообщения больше 64Кб (check_mail_big): Ok
+Успешно
+2022-May-20 15:51:27 Проверка на наличие неотправленных сообщений (check_mail_b_event): Ok
+Успешно
+2022-May-20 15:51:30 Внутреннее перенаправление (функция LocalRedirect) (check_localredirect): Ok
+50% done
+Connection to bitra:80	Success
+
+2022-May-20 15:51:32 Внутреннее перенаправление (функция LocalRedirect) (check_localredirect): Ok
+Connection to bitra:80	Success
+
+Успешно
+2022-May-20 15:51:34 Фактическое ограничение памяти (check_memory_limit): Ok
+20% done
+Connection to bitra:80	Success
+
+2022-May-20 15:51:36 Фактическое ограничение памяти (check_memory_limit): Ok
+40% done
+Connection to bitra:80	Success
+
+2022-May-20 15:51:38 Фактическое ограничение памяти (check_memory_limit): Ok
+60% done
+Connection to bitra:80	Success
+
+2022-May-20 15:51:40 Фактическое ограничение памяти (check_memory_limit): Ok
+80% done
+Connection to bitra:80	Success
+
+2022-May-20 15:51:42 Фактическое ограничение памяти (check_memory_limit): Ok
+Connection to bitra:80	Success
+
+Не менее 256 М
+2022-May-20 15:51:45 Работа с файлами кеша (check_cache): Ok
+Успешно
+2022-May-20 15:51:47 Доступ к серверу обновлений (check_update): Ok
+Успешно
+2022-May-20 15:51:49 HTTP авторизация (check_http_auth): Ok
+Connection to bitra:80	Success
+
+Успешно
+2022-May-20 15:51:51 Создание и запуск файла (check_exec): Ok
+Connection to bitra:80	Success
+
+Успешно
+2022-May-20 15:51:54 Функция getimagesize для swf (check_getimagesize): Ok
+Успешно
+2022-May-20 15:51:56 Версия MySQL-сервера (check_mysql_bug_version): Ok
+Успешно
+2022-May-20 15:51:59 Время на БД и веб-сервере (check_mysql_time): Fail
+Ошибка! Время отличается на 3600 секунд
+2022-May-20 15:52:01 Режим работы MySQL (check_mysql_mode): Fail
+Ошибка! innodb_strict_mode=ON, требуется OFF
+2022-May-20 15:52:03 Кодировка соединения (check_mysql_connection_charset): Ok
+character_set_connection=utf8, collation_connection=utf8_unicode_ci, character_set_results=utf8
+Успешно
+2022-May-20 15:52:05 Кодировка базы данных (check_mysql_db_charset): Ok
+CHARSET=utf8, COLLATION=utf8_unicode_ci
+Успешно
+2022-May-20 15:52:08 Кодировки таблиц в БД (check_mysql_table_charset): Ok
+Успешно
+2022-May-20 15:52:10 Структура базы данных (check_mysql_table_structure): Ok
+0% done
+2022-May-20 15:52:12 Структура базы данных (check_mysql_table_structure): Ok
+6% done
+2022-May-20 15:52:14 Структура базы данных (check_mysql_table_structure): Ok
+12% done
+2022-May-20 15:52:17 Структура базы данных (check_mysql_table_structure): Ok
+18% done
+2022-May-20 15:52:19 Структура базы данных (check_mysql_table_structure): Ok
+25% done
+2022-May-20 15:52:21 Структура базы данных (check_mysql_table_structure): Ok
+31% done
+2022-May-20 15:52:24 Структура базы данных (check_mysql_table_structure): Ok
+37% done
+2022-May-20 15:52:29 Структура базы данных (check_mysql_table_structure): Ok
+43% done
+2022-May-20 15:52:31 Структура базы данных (check_mysql_table_structure): Ok
+50% done
+2022-May-20 15:52:33 Структура базы данных (check_mysql_table_structure): Ok
+56% done
+2022-May-20 15:52:36 Структура базы данных (check_mysql_table_structure): Ok
+62% done
+2022-May-20 15:52:39 Структура базы данных (check_mysql_table_structure): Ok
+68% done
+2022-May-20 15:52:41 Структура базы данных (check_mysql_table_structure): Ok
+75% done
+2022-May-20 15:52:44 Структура базы данных (check_mysql_table_structure): Ok
+81% done
+2022-May-20 15:52:46 Структура базы данных (check_mysql_table_structure): Ok
+87% done
+2022-May-20 15:52:48 Структура базы данных (check_mysql_table_structure): Ok
+93% done
+2022-May-20 15:52:50 Структура базы данных (check_mysql_table_structure): Ok
+Успешно

@@ -2684,3 +2684,49 @@
 2022-05-18 14:28:06 -  - exec CUpdateClient::GetHTTPPage
 2022-05-18 14:28:06 -  - TIME GetUpdatesList(request) 0.424 sec
 2022-05-18 14:28:06 -  - exec CUpdateClient::ParseServerData
+2022-05-20 15:52:38 -  - exec CUpdateClient::GetUpdatesList
+2022-05-20 15:52:38 -  - exec CUpdateClient::CollectRequestData
+2022-05-20 15:52:38 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=21.1200.800&VERSION=22.0.150&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=bitra&CHHB=bitra&CSAB=127.0.0.1&SUID=5cd961f1aea7caee05edc67c42744e7a&CANGZIP=Y&CLIENT_PHPVER=7.4.27&stable=Y&mbfo=0&NGINX=Y&SMD=N&rerere=Y&bitm_main=22.0.150&bitm_b24connector=21.100.0&bitm_bitrixcloud=21.0.0&bitm_clouds=22.0.0&bitm_fileman=22.0.0&bitm_highloadblock=22.200.0&bitm_iblock=21.800.200&bitm_landing=21.1200.50&bitm_messageservice=22.200.100&bitm_perfmon=21.0.0&bitm_rest=22.0.0&bitm_search=22.0.0&bitm_seo=22.0.100&bitm_socialservices=22.0.50&bitm_translate=21.100.0&bitm_ui=22.200.100&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2022-05-20 15:52:38 -  - exec CUpdateClient::GetHTTPPage
+2022-05-20 15:52:38 -  - TIME GetUpdatesList(request) 0.172 sec
+2022-05-20 15:52:38 -  - exec CUpdateClient::ParseServerData
+2022-05-20 15:53:10 -  - exec CUpdateClient::LoadModulesUpdates
+2022-05-20 15:53:10 -  - exec CUpdateClient::CollectRequestData
+2022-05-20 15:53:10 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=21.1200.800&VERSION=22.0.150&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=bitra&CHHB=bitra&CSAB=127.0.0.1&SUID=5cd961f1aea7caee05edc67c42744e7a&CANGZIP=Y&CLIENT_PHPVER=7.4.27&stable=Y&mbfo=0&NGINX=Y&SMD=N&rerere=Y&bitm_main=22.0.150&bitm_b24connector=21.100.0&bitm_bitrixcloud=21.0.0&bitm_clouds=22.0.0&bitm_fileman=22.0.0&bitm_highloadblock=22.200.0&bitm_iblock=21.800.200&bitm_landing=21.1200.50&bitm_messageservice=22.200.100&bitm_perfmon=21.0.0&bitm_rest=22.0.0&bitm_search=22.0.0&bitm_seo=22.0.100&bitm_socialservices=22.0.50&bitm_translate=21.100.0&bitm_ui=22.200.100&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2022-05-20 15:53:10 -  - exec CUpdateClient::GetHTTPPage
+2022-05-20 15:53:10 -  - TIME LoadModulesUpdates(request) 0.187 sec
+2022-05-20 15:53:10 -  - exec CUpdateClient::ParseServerData
+2022-05-20 15:53:10 - S - STEP
+2022-05-20 15:53:10 - LMU01 - LoadModulesUpdates-Step
+2022-05-20 15:53:12 -  - exec CUpdateClient::LoadModulesUpdates
+2022-05-20 15:53:12 -  - exec CUpdateClient::ParseServerData
+2022-05-20 15:53:12 -  - loadFile
+2022-05-20 15:53:12 - U - RETURN
+2022-05-20 15:53:12 -  - exec CUpdateClient::UnGzipArchive
+2022-05-20 15:53:12 -  - TIME UnGzipArchive 0.09 sec
+2022-05-20 15:53:12 -  - TIME UpdateStepModules 0.053 sec
+2022-05-20 15:53:12 - UPD_SUCCESS - Updated: bitrixcloud (22.0.0)<br><li>Изменён адрес получения ключей для резервного копирования. <li>Исправлена ошибка в гаджете \"Инспектора сайтов\". 
+2022-05-20 15:53:14 -  - exec CUpdateClient::LoadModulesUpdates
+2022-05-20 15:53:14 -  - exec CUpdateClient::CollectRequestData
+2022-05-20 15:53:14 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=21.1200.800&VERSION=22.0.150&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=bitra&CHHB=bitra&CSAB=127.0.0.1&SUID=5cd961f1aea7caee05edc67c42744e7a&CANGZIP=Y&CLIENT_PHPVER=7.4.27&stable=Y&mbfo=0&NGINX=Y&SMD=N&rerere=Y&bitm_main=22.0.150&bitm_b24connector=21.100.0&bitm_bitrixcloud=22.0.0&bitm_clouds=22.0.0&bitm_fileman=22.0.0&bitm_highloadblock=22.200.0&bitm_iblock=21.800.200&bitm_landing=21.1200.50&bitm_messageservice=22.200.100&bitm_perfmon=21.0.0&bitm_rest=22.0.0&bitm_search=22.0.0&bitm_seo=22.0.100&bitm_socialservices=22.0.50&bitm_translate=21.100.0&bitm_ui=22.200.100&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2022-05-20 15:53:14 -  - exec CUpdateClient::GetHTTPPage
+2022-05-20 15:53:15 -  - TIME LoadModulesUpdates(request) 0.172 sec
+2022-05-20 15:53:15 -  - exec CUpdateClient::ParseServerData
+2022-05-20 15:53:15 - S - STEP
+2022-05-20 15:53:15 - LMU01 - LoadModulesUpdates-Step
+2022-05-20 15:53:17 -  - exec CUpdateClient::LoadModulesUpdates
+2022-05-20 15:53:17 -  - exec CUpdateClient::ParseServerData
+2022-05-20 15:53:17 -  - loadFile
+2022-05-20 15:53:17 - U - RETURN
+2022-05-20 15:53:17 -  - exec CUpdateClient::UnGzipArchive
+2022-05-20 15:53:17 -  - TIME UnGzipArchive 0.015 sec
+2022-05-20 15:53:17 -  - TIME UpdateStepModules 0.004 sec
+2022-05-20 15:53:17 - UPD_SUCCESS - Updated: rest (22.0.100)<br><li>Исправлена ошибка механизма импорта конфигураций.
+2022-05-20 15:53:19 -  - exec CUpdateClient::LoadModulesUpdates
+2022-05-20 15:53:19 -  - exec CUpdateClient::CollectRequestData
+2022-05-20 15:53:19 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=21.1200.800&VERSION=22.0.150&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=bitra&CHHB=bitra&CSAB=127.0.0.1&SUID=5cd961f1aea7caee05edc67c42744e7a&CANGZIP=Y&CLIENT_PHPVER=7.4.27&stable=Y&mbfo=0&NGINX=Y&SMD=N&rerere=Y&bitm_main=22.0.150&bitm_b24connector=21.100.0&bitm_bitrixcloud=22.0.0&bitm_clouds=22.0.0&bitm_fileman=22.0.0&bitm_highloadblock=22.200.0&bitm_iblock=21.800.200&bitm_landing=21.1200.50&bitm_messageservice=22.200.100&bitm_perfmon=21.0.0&bitm_rest=22.0.100&bitm_search=22.0.0&bitm_seo=22.0.100&bitm_socialservices=22.0.50&bitm_translate=21.100.0&bitm_ui=22.200.100&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2022-05-20 15:53:19 -  - exec CUpdateClient::GetHTTPPage
+2022-05-20 15:53:19 -  - TIME LoadModulesUpdates(request) 0.177 sec
+2022-05-20 15:53:19 -  - exec CUpdateClient::ParseServerData
+2022-05-20 15:53:19 - STEP - Finish - NOUPDATES
+2022-05-20 15:53:19 - STEP - Finish - NOUPDATES
