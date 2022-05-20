@@ -12,7 +12,9 @@
 	<script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
 	<?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH.'/css/main.css');?>
 	<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH.'/js/main.js');?>
-
+	<?
+		$isIndex = $APPLICATION->GetCurPage() == SITE_DIR;
+	?>
 </head>
 <body>
 	<div id="panel"><?$APPLICATION->ShowPanel();?></div>
@@ -35,20 +37,23 @@
 				);
 			?>	
 			<nav class="nav">
-				<ul class="nav__menu">
-					<li class="nav__item">
-						<a class="nav__link" href="/index.html">Главная</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="/services.html">Услуги</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="/about-us.html">О сервисе</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="/contacts.html">Контакты</a>
-					</li>
-				</ul>
+				<?$APPLICATION->IncludeComponent("bitrix:menu", "main_menu", Array(
+						"ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+							"CHILD_MENU_TYPE" => "left",	// Тип меню для остальных уровней
+							"DELAY" => "N",	// Откладывать выполнение шаблона меню
+							"MAX_LEVEL" => "1",	// Уровень вложенности меню
+							"MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
+								0 => "",
+							),
+							"MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+							"MENU_CACHE_TYPE" => "A",	// Тип кеширования
+							"MENU_CACHE_USE_GROUPS" => "Y",	// Учитывать права доступа
+							"ROOT_MENU_TYPE" => "top",	// Тип меню для первого уровня
+							"USE_EXT" => "N",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+						),
+						false
+					);
+				?>
 			</nav>
 			<div class="inline">
 				<a href="/login.html" class="btn">
@@ -61,22 +66,38 @@
 		</div>
 		<div class="header__bottom">
 			<nav class="mobile-nav">
-				<ul class="mobile-nav__menu">
-					<li class="mobile-nav__item">
-						<a class="mobile-nav__link active" href="index.html">Главная</a>
-					</li>
-					<li class="mobile-nav__item">
-						<a class="mobile-nav__link" href="services.html">Услуги</a>
-					</li>
-					<li class="mobile-nav__item">
-						<a class="mobile-nav__link" href="about-us.html">О сервисе</a>
-					</li>
-					<li class="mobile-nav__item">
-						<a class="mobile-nav__link" href="contacts.html">Контакты</a>
-					</li>
-				</ul>
+				<?$APPLICATION->IncludeComponent("bitrix:menu", "hamburger_menu", Array(
+						"ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+							"CHILD_MENU_TYPE" => "left",	// Тип меню для остальных уровней
+							"DELAY" => "N",	// Откладывать выполнение шаблона меню
+							"MAX_LEVEL" => "1",	// Уровень вложенности меню
+							"MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
+								0 => "",
+							),
+							"MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+							"MENU_CACHE_TYPE" => "A",	// Тип кеширования
+							"MENU_CACHE_USE_GROUPS" => "Y",	// Учитывать права доступа
+							"ROOT_MENU_TYPE" => "top",	// Тип меню для первого уровня
+							"USE_EXT" => "N",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+						),
+						false
+					);
+				?>
 			</nav>
 		</div>
 	</div>
 </header>
-
+<section class="breadcrumbs">
+	<div class="container">
+		<? if (!$isIndex): ?>
+			<?$APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumbs", Array(
+					"PATH" => "",	// Путь, для которого будет построена навигационная цепочка (по умолчанию, текущий путь)
+						"SITE_ID" => "s1",	// Cайт (устанавливается в случае многосайтовой версии, когда DOCUMENT_ROOT у сайтов разный)
+						"START_FROM" => "0",	// Номер пункта, начиная с которого будет построена навигационная цепочка
+					),
+					false
+				);
+			?>
+		<? endif; ?>
+	</div>
+</section>

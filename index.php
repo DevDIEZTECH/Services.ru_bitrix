@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
+$APPLICATION->SetTitle("Услуги.ru");
 ?>
 
 <main class="main">     
@@ -15,7 +15,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                      "AREA_FILE_SHOW" => "file",
                      "AREA_FILE_SUFFIX" => "inc",
                      "EDIT_TEMPLATE" => "",
-                     "PATH" => "/include/inc_section-search_h1.php"
+                     "PATH" => "/include/inc_section_search_h1.php"
                   )
 				   );
 			   ?>	
@@ -42,7 +42,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                         "AREA_FILE_SHOW" => "file",
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
-                        "PATH" => "/include/inc_services_title.php"
+                        "PATH" => "/include/inc_section_services_title.php"
                      )
                   );
 			      ?>
@@ -54,7 +54,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                            "AREA_FILE_SHOW" => "file",
                            "AREA_FILE_SUFFIX" => "inc",
                            "EDIT_TEMPLATE" => "",
-                           "PATH" => "/include/inc_services_btn.php"
+                           "PATH" => "/include/inc_section_services_btn.php"
                         )
                      );
 			         ?>	
@@ -126,7 +126,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                         "AREA_FILE_SHOW" => "file",
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
-                        "PATH" => "/include/inc_about-us_title.php"
+                        "PATH" => "/include/inc_section_about-us_title.php"
                      )
                   );
                ?>
@@ -141,7 +141,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                               "AREA_FILE_SHOW" => "file",
                               "AREA_FILE_SUFFIX" => "inc",
                               "EDIT_TEMPLATE" => "",
-                              "PATH" => "/include/inc_about-us_text.php"
+                              "PATH" => "/include/inc_section_about-us_text.php"
                            )
                         );
 			            ?>
@@ -153,7 +153,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                                  "AREA_FILE_SHOW" => "file",
                                  "AREA_FILE_SUFFIX" => "inc",
                                  "EDIT_TEMPLATE" => "",
-                                 "PATH" => "/include/inc_about-us_btn.php"
+                                 "PATH" => "/include/inc_section_about-us_btn.php"
                               )
                            );
                         ?>
@@ -167,7 +167,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                               "AREA_FILE_SHOW" => "file",
                               "AREA_FILE_SUFFIX" => "inc",
                               "EDIT_TEMPLATE" => "",
-                              "PATH" => "/include/inc_about-us_img.php"
+                              "PATH" => "/include/inc_section_about-us_img.php"
                            )
                         );
 			            ?>
@@ -188,7 +188,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                         "AREA_FILE_SHOW" => "file",
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
-                        "PATH" => "/include/inc_stats_title.php"
+                        "PATH" => "/include/inc_section_stats_title.php"
                      )
                   );
 			      ?>
@@ -199,7 +199,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                         "AREA_FILE_SHOW" => "file",
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
-                        "PATH" => "/include/inc_stats_subtitle.php"
+                        "PATH" => "/include/inc_section_stats_subtitle.php"
                      )
                   );
 			      ?>
@@ -238,7 +238,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                         "AREA_FILE_SHOW" => "file",
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
-                        "PATH" => "/include/inc_stats_title.php"
+                        "PATH" => "/include/inc_section_stats_title.php"
                      )
                   );
 			      ?>
@@ -296,7 +296,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                         "AREA_FILE_SHOW" => "file",
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
-                        "PATH" => "/include/inc_popular_services_title.php"
+                        "PATH" => "/include/inc_section_popular_services_title.php"
                      )
                   );
 			      ?>
@@ -308,7 +308,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                            "AREA_FILE_SHOW" => "file",
                            "AREA_FILE_SUFFIX" => "inc",
                            "EDIT_TEMPLATE" => "",
-                           "PATH" => "/include/inc_services_btn.php"
+                           "PATH" => "/include/inc_section_services_btn.php"
                         )
                      );
                   ?>
@@ -380,7 +380,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                         "AREA_FILE_SHOW" => "file",
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
-                        "PATH" => "/include/inc_feedback_title.php"
+                        "PATH" => "/include/inc_section_feedback_title.php"
                      )
                   );
 			      ?>
@@ -394,7 +394,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                            "AREA_FILE_SHOW" => "file",
                            "AREA_FILE_SUFFIX" => "inc",
                            "EDIT_TEMPLATE" => "",
-                           "PATH" => "/include/inc_feedback_img.php"
+                           "PATH" => "/include/inc_section_feedback_img.php"
                         )
                      );
                   ?>
@@ -422,7 +422,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                         "AREA_FILE_SHOW" => "file",
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
-                        "PATH" => "/include/inc_map_title.php"
+                        "PATH" => "/include/inc_section_map_title.php"
                      )
                   );
 			      ?>
@@ -433,7 +433,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                         "AREA_FILE_SHOW" => "file",
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
-                        "PATH" => "/include/inc_map_text.php"
+                        "PATH" => "/include/inc_section_map_text.php"
                      )
                   );
 			      ?>
@@ -446,7 +446,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                         "AREA_FILE_SHOW" => "file",
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
-                        "PATH" => "/include/inc_map_img.php"
+                        "PATH" => "/include/inc_section_map_img.php"
                      )
                   );
 			      ?>
