@@ -402,17 +402,19 @@ $APPLICATION->SetTitle("Услуги.ru");
       <div class="container">
          <div class="section__wrapper">
             <div class="section__heading">
-               <?$APPLICATION->IncludeComponent(
-                     "bitrix:main.include",
-                     "",
-                     Array(
-                        "AREA_FILE_SHOW" => "file",
-                        "AREA_FILE_SUFFIX" => "inc",
-                        "EDIT_TEMPLATE" => "",
-                        "PATH" => "/include/inc_section_feedback_title.php"
-                     )
-                  );
-			      ?>
+               <h2 class="section__title">
+                  <?$APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                           "AREA_FILE_SHOW" => "file",
+                           "AREA_FILE_SUFFIX" => "inc",
+                           "EDIT_TEMPLATE" => "",
+                           "PATH" => "/include/inc_section_feedback_title.php"
+                        )
+                     );
+                  ?>
+               </h2>   
             </div>
             <div class="section__content">
                <div class="feedback">
@@ -433,7 +435,19 @@ $APPLICATION->SetTitle("Услуги.ru");
                      <input name="theme" class="input" placeholder="Тема">
                      <input name="email" class="input" placeholder="Email" type="email">
                      <textarea name="comment" placeholder="Сообщение" class="input"></textarea>
-                     <button class="btn">Отправить</button>
+                     <button class="btn">
+                        <?$APPLICATION->IncludeComponent(
+                              "bitrix:main.include",
+                              "",
+                              Array(
+                                 "AREA_FILE_SHOW" => "file",
+                                 "AREA_FILE_SUFFIX" => "inc",
+                                 "EDIT_TEMPLATE" => "",
+                                 "PATH" => "/include/inc_section_feedback_btn.php"
+                              )
+                           );
+                        ?>
+                     </button>
                   </form>
                </div>
             </div>

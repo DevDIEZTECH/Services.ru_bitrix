@@ -45,7 +45,19 @@
    <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-feedback-title">
          <header class="modal__header">
-            <h3 class="modal__title" id="modal-feedback-title">Мы здесь, чтобы помочь</h3>
+            <h3 class="modal__title" id="modal-feedback-title">
+					<?$APPLICATION->IncludeComponent(
+							"bitrix:main.include",
+							"",
+							Array(
+								"AREA_FILE_SHOW" => "file",
+								"AREA_FILE_SUFFIX" => "inc",
+								"EDIT_TEMPLATE" => "",
+								"PATH" => "/include/inc_section_feedback_title.php"
+							)
+						);
+					?>
+				</h3>
             <button class="modal__close" aria-label="Close modal" data-micromodal-close=""></button>
          </header>
          <main class="modal__content" id="modal-feedback-content">
@@ -55,7 +67,19 @@
                <input name="theme" class="input" placeholder="Тема">
                <input name="email" class="input" placeholder="Email" type="email">
                <textarea name="comment" placeholder="Сообщение" class="input"></textarea>
-               <button class="btn">Отправить</button>
+               <button class="btn">
+						<?$APPLICATION->IncludeComponent(
+								"bitrix:main.include",
+								"",
+								Array(
+									"AREA_FILE_SHOW" => "file",
+									"AREA_FILE_SUFFIX" => "inc",
+									"EDIT_TEMPLATE" => "",
+									"PATH" => "/include/inc_section_feedback_btn.php"
+								)
+							);
+						?>
+					</button>
             </form>
          </main>
       </div>
