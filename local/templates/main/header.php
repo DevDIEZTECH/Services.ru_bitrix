@@ -4,10 +4,10 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title><?$APPLICATION->ShowTitle();?></title>
 	<?$APPLICATION->ShowHead();?>
-	<link rel="icon" href="/favicon.ico" sizes="any">
-	<link rel="icon" href="/icon.svg" type="image/svg+xml">
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-	<link rel="manifest" href="/manifest.webmanifest">
+	<link rel="icon" href="<?=SITE_TEMPLATE_PATH?>/favicon.ico" sizes="any">
+	<link rel="icon" href="<?=SITE_TEMPLATE_PATH?>/icon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="<?=SITE_TEMPLATE_PATH?>/apple-touch-icon.png">
+	<link rel="manifest" href="<?=SITE_TEMPLATE_PATH?>/manifest.webmanifest">
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
 	<script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
 	<?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH.'/css/main.css');?>
