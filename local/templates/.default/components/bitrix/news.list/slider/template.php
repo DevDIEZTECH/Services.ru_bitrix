@@ -19,7 +19,10 @@ $this->setFrameMode(true);
 		$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 		?>
 		<div class="reason">
-			<img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt="" class="reason__img">
+			<?
+			$img = !empty($arItem["PREVIEW_PICTURE"])?$arItem["PREVIEW_PICTURE"]["SRC"]:"";
+			?>
+			<img src="<?= $img?>" alt="" class="reason__img">
 			<strong class="reason__title"><?echo $arItem["NAME"]?></strong>
 			<small class="reason__text"><?echo $arItem["PREVIEW_TEXT"];?></small>
 		</div>
