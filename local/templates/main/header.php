@@ -1,3 +1,6 @@
+<?php 
+	if (!define('B_PROLOG-INCLUDED') || B_PROLOG_INCLUDED !== true) die();
+?>
 <!doctype html>
 <html lang="ru">
 <head>
@@ -12,9 +15,7 @@
 	<script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
 	<?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH.'/css/main.css');?>
 	<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH.'/js/main.js');?>
-	<?
-		$isIndex = $APPLICATION->GetCurPage() == SITE_DIR;
-	?>
+	<?$isIndex = $APPLICATION->GetCurPage() == SITE_DIR;?>
 </head>
 <body>
 	<div id="panel"><?$APPLICATION->ShowPanel();?></div>

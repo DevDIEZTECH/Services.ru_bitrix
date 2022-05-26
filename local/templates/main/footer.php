@@ -1,5 +1,7 @@
-
-	<footer class="footer">
+<?php 
+	if (!define('B_PROLOG-INCLUDED') || B_PROLOG_INCLUDED !== true) die();
+?>
+<footer class="footer">
 	<div class="container">
 		<div class="footer__wrapper">
 			<?$APPLICATION->IncludeComponent(
